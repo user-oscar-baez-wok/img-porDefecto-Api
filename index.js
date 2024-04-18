@@ -2,9 +2,9 @@
 const drawCharacter2 = (results) => {
   results.map((character) => {
     const imagen = character.image;
-    const newImage = imagen ? imagen : "./img/baff.png";
+    const newImage = imagen ? imagen : "./img/urlDeLaImagen.png";
     container.innerHTML += `
-                      <img src="${newImage}" alt="">
+                      <img src="${newImage}" alt=${character.alt}>
                       <h1>${character.name}</h1>
                       <p>${character.status}</p>
                       <hr>
